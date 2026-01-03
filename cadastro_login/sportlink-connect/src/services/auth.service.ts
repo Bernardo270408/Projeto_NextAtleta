@@ -158,7 +158,7 @@ export const authService = {
       formData.append('bio', data.bio ?? '');
 
 
-      const userResponse = await apiCall<{ user: Usuario }>('/cadastrar/', {
+      const userResponse = await apiCall<{ user: Usuario }>('/cadastrar/atleta', {
         method: 'POST',
         body: formData,
       });
